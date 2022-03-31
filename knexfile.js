@@ -10,7 +10,7 @@ const config = {
 
 const knex = require("knex")(config);
 
-
+//comment to add to github repo
 
 module.exports = {
   development: {

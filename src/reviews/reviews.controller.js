@@ -4,7 +4,6 @@ const asyncErrorBoundary = require('../errors/asyncErrorBoundary');
 async function reviewExists(req, res, next) {
   const { reviewId } = req.params;
   const review = await reviewsService.read(reviewId);
-
   if (review) {
     res.locals.reviewId = reviewId;
     res.locals.review = review;

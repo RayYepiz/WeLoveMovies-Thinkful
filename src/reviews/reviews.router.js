@@ -3,7 +3,7 @@ const controller = require('./reviews.controller');
 const methodNotAllowed = require('../errors/methodNotAllowed');
 //DELETE, PUT /reviews/:reviewId
 router
-  .route('/:reviewId')
+  .route('/:reviewid')
   .delete(controller.delete)
   .put(controller.update)
   .all(methodNotAllowed);
